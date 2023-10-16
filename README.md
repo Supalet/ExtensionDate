@@ -33,7 +33,7 @@ let resultDate = Date().convertDateToString(dateFormat: "dd/MM/yyyy")
 let resultDate = "17/5/1998".convertDateFormatByString(dateFormatStarter: "dd/MM/yyyy", dateFormatResult: "dd MM yyyy")
 ```
 
-### CompareDate
+## CompareDate
 * toGranularity หน่วยของระยะวันที่ต้องการ (** hour day month year **)
 ```
 let starterDate = "14/10/1998".convertToDate(dateFormat: "dd/MM/yyyy")
@@ -48,7 +48,7 @@ orderedSame => startDate == toDate
 orderedDescending => startDate > toDate
 ```
 
-### Get Date From User Config period
+## Get Date From User Config period
 * component หน่วยของระยะวันที่ต้องการ (** hour day month year **)
 * value จำนวนที่ต้องการเช่น 30 วันข้างหน้า
 * toDate จุดเริ่มต้นในการนับ
@@ -56,7 +56,7 @@ orderedDescending => startDate > toDate
 let resultDate = dateFromUserConfig(component: .day, value: 20, toDate: Date())
 ```
 
-### Get Date In Calendar  ** startOfWeek endOfWeek startOfMonth endOfMonth ** 
+## Get Date In Calendar  ** startOfWeek endOfWeek startOfMonth endOfMonth ** 
   get วันแรกของสัปดาป์
 ```
 let resultDate = Date().startOfWeek
