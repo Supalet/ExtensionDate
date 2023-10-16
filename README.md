@@ -1,8 +1,18 @@
 # ExtensionDate
-git get all function extension date for use in project  
+git get all extension function Date for use in the project  
 
-## Blockquotes
+## Example Convert Date
 
-> Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
->
->> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
+### Convert String To Date 
+```
+let resultDate = "17/5/1998".convertToDate(dateFormat: "dd/MM/yyyy")
+```
+### Convert Date To String
+```
+let resultDate = Date().convertDateToString(dateFormat: "dd/MM/yyyy")
+```
+
+### Convert Date To String
+```
+let resultDate = "17/5/1998".convertDateFormatByString(dateFormatStarter: "dd/MM/yyyy", dateFormatResult: "dd MM yyyy")
+```
